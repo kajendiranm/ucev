@@ -1,0 +1,645 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+.info{
+    width: 100%;
+    height: 50px;
+    box-sizing: border-box;
+    background-color:blue;
+}
+.bgimg{
+    width: 100%;
+    height:auto;  
+    box-sizing: border-box;
+}
+.bgimg img{
+    width: 100%;
+    height:auto;
+}
+#menu-btn{
+    display: none;
+    
+}
+
+.nav{
+    position: sticky;
+    top:0%;
+    left: 0%;
+    z-index: 1;
+    height:6vh;
+    width:100%;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    background-color: blue;
+}
+.nav a {
+    background-color: #0000ff;
+    border: none;
+    height:6vh;
+    padding-top:2vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    text-align: center;
+    color:white;
+    justify-content: center;
+    justify-items: center;
+    font-size:1.3vw;
+    text-decoration: none;
+    box-sizing: border-box;
+    transition-duration: 0.9s;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+.nav a:hover{
+    background-color:white;
+    color:#0000ff;
+}
+.w80{
+    width: 80%;
+    margin-left: 10%;
+    border:2px solid whitesmoke;
+    display: flex;
+    flex-direction: column;
+}
+.intro{
+    
+    width:100%;
+    height: max-content;
+    background-color: whitesmoke;
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+}
+.main-image{
+    flex:35%;
+    height:100%;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+    
+    
+}
+.main-image img{ 
+    position:absolute;
+    margin-top:5vw;
+    margin-left: 25%;
+    width:60%;
+    height:15vw;
+    border-radius: 50%;
+    align-self: center;
+}
+.infor{
+    flex:75%;
+    display: flex;
+    flex-direction:column;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    justify-content: center;
+    align-content: center;
+    overflow: hidden;
+    margin-right: 2vw;
+}
+.infor #name{
+    margin-top: 10%;
+    font-size:3vw;
+}
+.infor #pos{
+    font-size: 1.5vw;
+    font-weight: bolder;
+}
+.infor #dept{
+    font-size:1.5vw;
+}
+.infor a{
+    font-size:1vw;
+    font-weight: bold;
+    text-decoration:none;
+    color:black;
+}
+.infor #mob{
+    font-size: 2vw;
+}
+.links{
+    
+    display: flex;
+    flex-direction: row;
+    justify-items: space-around;
+    width:100%;
+    gap:10px;
+    position: relative;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    
+}
+.links a {
+    width:100%;
+    padding: 2%;
+    font-size: 1.1vw;
+    font-weight: bold;
+    background-color:blue;
+    text-align: center;
+    border-radius:5px;
+    color:aliceblue;
+
+    transition-duration: 1s;
+    
+    
+
+}
+.links a:hover{
+    color:blue;
+    background-color: white;
+
+}
+.cards{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   flex-wrap: wrap;
+   align-content: center;
+   background-color: darkblue;
+   color: whitesmoke;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+.card{
+    margin:3vh;  
+}
+.card .desc{
+    font-size:1.2vw;
+}
+#exp,#nat,#inte{
+    font-size: 4vw;
+}
+.card p{
+    text-align: center;
+
+}
+h2{
+    padding: 2%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2vw;
+    color: darkblue;
+    text-align: center;
+}
+
+.ed-qua{
+    background-color:white;
+    width:100%;
+    height:100%;
+    display: flex;
+    justify-content:center;
+    flex-direction:row;
+    flex-wrap: wrap;
+    gap: 1%;
+    width: 100%;
+    
+}
+.ed{
+    font-size: 1.05vw;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    width:auto;
+    height: fit-content;
+    background-color: aliceblue;
+    border-radius: 50px;
+    padding: 2%;
+    font-weight:530;
+    margin-top: 1vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.ed h3{
+   
+   padding:3%;
+   font-size: 2vw;
+}
+
+.ed:hover{
+    background-color: darkblue;
+    color: whitesmoke;
+    transition: 1s;
+}
+#aos{
+    color:white;
+    background-color: darkblue;
+    margin-top: 2vh;
+}
+.aof{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    background-color: darkblue;
+    color: aliceblue;
+    padding: 2%;
+    width:auto;
+    height: auto;
+    font-size: 2vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.subs{
+    background-color: whitesmoke;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-bottom: 2%;
+}
+.subs ul,.addr ol{
+    
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    font-size: 1.1vw;
+    height:30vh;
+    gap:2%;
+    font-weight:450 ;
+    text-align: center;
+    margin-left:4%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+.addr{
+    background-color: whitesmoke;
+    padding: 2%;
+}
+
+.addr ol{
+    height: max-content;
+    margin-left: 15vw;
+    text-align: left;
+}
+.subs ul li{
+    width:fit-content;
+}
+
+.tit{
+    display: flex;
+    flex-direction:row;
+    width:100%;
+    justify-content: center;
+    gap:auto;
+    margin-bottom: 2vh;
+
+
+}
+
+
+.swmr,.swls{
+    font-size:1.5vw;
+    width:max-content;
+    padding: 1%;
+    background-color: whitesmoke;
+    color:darkblue;
+    border-radius: 30px;
+}
+.tit h2{
+    font-size: 1.8vw;
+    padding: 1%;
+    color:black;
+    
+
+}
+
+.cnt{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:5%;
+    margin-left:10vw;
+    padding-top:10vh;
+    overflow:hidden;
+
+}
+.swls{
+    margin-top:5vh;
+}
+.cnt.show1{
+    display: none;
+
+}
+.swmr:hover,.swls:hover{
+    background-color: darkblue;
+    color:whitesmoke;
+
+}
+.ol1{
+    margin:2%;
+    font-weight: 500;
+}
+#memb{
+    background-color: darkblue;
+    color: white;
+}
+.memb {
+    width:100%;
+    background-color: darkblue;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2%;
+    justify-content: center;
+
+    
+}
+
+.memb p{
+    box-sizing: border-box;
+    padding:3%;
+    width:fit-content;
+    font-size: 1.7vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#adr{
+    background-color: whitesmoke;
+}
+.copyright{
+    padding:2vw;
+    font-size: 1.4vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+#top{
+    width:fit-content;
+    font-size: 1.4vw;
+    background-color: darkblue;
+    padding: 1%;
+    color: white;
+    border-radius:30px;
+    text-decoration: none;
+    position: fixed;
+    bottom: 3vh;
+    right:4vw;
+
+}
+@media only screen and (max-width:  450px) {
+.info{
+        height:25px;
+    }
+
+#menu-btn{
+    display: block;
+    box-sizing: border-box;
+    height:25px;
+    width: 25px;
+}
+.nav{
+    flex-direction: column;
+    height: 100%;
+    
+}
+.nav1 {
+    display: none;
+    }
+.nav a{
+    
+    height: auto;
+    font-size: 3vw;
+    width:100%;
+    font-weight: bold;
+    text-align: center;
+    padding: 2%;
+
+}
+.w80{
+    width: 100%;
+    margin-left: 0%;
+}
+.intro{
+    width:100%;
+    height:max-content;
+    display: flex;
+    flex-direction:column; 
+    
+}
+.main-image{
+    width:100%;
+    height:fit-content;
+    position:static;
+    
+    
+    
+}
+.main-image img{
+    height:30vw;
+    width:30%;
+    position:relative;
+    left:10vw;
+    
+    
+    
+    
+    
+
+}
+.infor{
+    margin: 0%;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+
+
+}
+.infor #name{
+    margin-top: 4%;
+    font-size:7vw;
+    text-align: center;
+
+}
+.infor #pos{
+    font-size: 4vw;
+    font-weight: bolder;
+    text-align: center;
+}
+.infor #dept{
+    font-size:5vw;
+    text-align: center;
+}
+.infor a{
+    font-size:5vw;
+    font-weight: bold;
+    text-align: center;
+    text-decoration:none;
+    color:black;
+}
+.links{
+    width: 100%;
+    height:auto;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content:center;
+
+}
+.links a {
+    width:fit-content;
+    color:white;
+}
+.cards{
+    height:auto;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    gap:0;
+}
+.card{
+    width: fit-content;
+   margin: 2vw;
+    
+    
+}
+.card .desc{
+    font-size:4vw;
+}
+#exp,#nat,#inte{
+    font-size:7vw;
+    font-weight: bolder;
+}
+.card p{
+    text-align: center;
+
+}
+h2{
+    padding: 2%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 7vw;
+    text-align: center;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+.ed-qua{
+    
+    flex-direction:column;
+    align-content: center;
+    width: 100%;
+    gap: 2vh;
+    
+}
+.ed{
+    
+    font-size: 4vw;
+    padding: 3%;
+}
+.ed h3{
+   
+   padding:2%;
+   font-size: 7vw;
+}
+.ed p{
+    text-align: center;
+    
+}
+#aos{
+    margin-top: 2vh;
+    margin-bottom: 0%;
+}
+.aof{
+    font-size: 5.5vw;
+    flex-direction: column;
+    text-align: center;
+    gap: 1vh;
+    margin-bottom: 0%;
+    
+}
+.subs{
+    margin: 0%;
+    padding-bottom: 2vh;
+}
+.subs ul,.addr ol{
+    height:auto;
+    font-size: 4vw;
+    margin-left: 10vw;
+    width:fit-content;
+    justify-content: center;
+}
+#adr{
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+.addr{
+    padding:10%;
+    margin-top: 0%;
+}
+.tit{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    width:100%;
+    align-content: center;
+    justify-content: center;
+    gap:auto;
+
+
+}
+
+.tit h2{
+    font-size: 5vw;
+    padding: 1%;
+    
+
+}
+
+.swmr,.swls{
+    font-size:4vw;
+    width:max-content;
+    padding: 1%;
+    background-color: whitesmoke;
+    color:darkblue;
+}
+
+.cnt{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3vw;
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left:5vw;
+    padding-top:1vh;
+    overflow:hidden;
+
+}
+.swls{
+    margin-top:5vh;
+}
+#memb{
+    margin-bottom: 0%;
+}
+.memb{
+    margin-top: 0%;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+.memb p{
+    width:100%;
+    font-size:3vw;
+    text-justify: center;
+
+}
+.copyright{
+    font-size: 5vw;
+    
+    width: auto;
+    text-align: center;
+}
+#top{
+    font-size: 4vw;
+    padding:2%;
+    border-radius:30px;
+    text-decoration: none;
+    bottom: 8vh;
+    right:10vw;
+
+}
+}
